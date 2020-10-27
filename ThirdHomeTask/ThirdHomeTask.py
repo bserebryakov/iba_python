@@ -32,10 +32,7 @@ class Student:
         return self.__lastname
 
     def get_age(self):
-        today = date.today()
-        date_of_birth = datetime.strptime(self.__birthday, "%d %m %Y")
-        return "%s years" % \
-               (today.year - date_of_birth.year - ((today.month, today.day) < (date_of_birth.month, date_of_birth.day)))
+        return self.__birthday
 
     def get_address(self):
         return self.__address
